@@ -24,12 +24,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
-        android:text="点击连接融云server（用户1）"/>
+        android:text="点击连接融云server（用户Make）"/>
 
     <Button
         android:id="@+id/connect_10086"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
-        android:text="点击连接融云server（用户2）"/>
+        android:text="点击连接融云server（用户Fun）"/>
 </LinearLayout>

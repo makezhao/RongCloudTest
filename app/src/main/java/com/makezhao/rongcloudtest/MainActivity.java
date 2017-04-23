@@ -59,7 +59,7 @@ public class MainActivity extends Activity implements View.OnClickListener, Rong
             @Override
             public void onSuccess(String userId) {
                 if (userId.equals("10010")) {
-                    mUser1.setText("用户1连接服务器成功");
+                    mUser1.setText("用户Make已连接成功");
                     startActivity(new Intent(MainActivity.this, HomeActivity.class));
                     Toast.makeText(MainActivity.this, "connect server success 10010", Toast.LENGTH_SHORT).show();
                 } else {
@@ -77,8 +77,8 @@ public class MainActivity extends Activity implements View.OnClickListener, Rong
 
     private void initUserInfo() {
         userIdList = new ArrayList<Friend>();
-        userIdList.add(new Friend("10010", "fun", "http://img5.duitang.com/uploads/item/201508/24/20150824065409_ckw5a.thumb.224_0.jpeg"));
-        userIdList.add(new Friend("10086", "make", "http://tx.haiqq.com/uploads/allimg/c161103/14N10U60I040-IY2.jpg"));
+        userIdList.add(new Friend("10010", "Fun", "http://img5.duitang.com/uploads/item/201508/24/20150824065409_ckw5a.thumb.224_0.jpeg"));
+        userIdList.add(new Friend("10086", "Make", "http://tx.haiqq.com/uploads/allimg/c161103/14N10U60I040-IY2.jpg"));
 
         RongIM.setUserInfoProvider(this, true);
     }
