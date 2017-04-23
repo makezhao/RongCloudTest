@@ -60,11 +60,11 @@ public class MainActivity extends Activity implements View.OnClickListener, Rong
             @Override
             public void onSuccess(String userId) {
                 if (userId.equals("10010")) {
-                    mUser1.setText("用户Fun已连接成功");
+                    mUser1.setText("用户Make已连接成功");
                     startActivity(new Intent(MainActivity.this, HomeActivity.class));
                     Toast.makeText(MainActivity.this, "connect server success 10010", Toast.LENGTH_SHORT).show();
                 } else {
-                    mUser2.setText("用户Make已连接成功");
+                    mUser2.setText("用户Fun已连接成功");
                     startActivity(new Intent(MainActivity.this, HomeActivity.class));
                     Toast.makeText(MainActivity.this, "connect server success 10086", Toast.LENGTH_SHORT).show();
                 }
