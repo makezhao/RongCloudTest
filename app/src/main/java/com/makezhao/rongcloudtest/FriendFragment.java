@@ -25,18 +25,27 @@ public class FriendFragment extends Fragment {
     }
 
     private View mView;
-    private Button mButton;
+    private Button mButton1, mButton2;
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         mView = inflater.inflate(R.layout.friend_fragment, null);
-        mButton = (Button) mView.findViewById(R.id.friend);
-        mButton.setOnClickListener(new View.OnClickListener() {
+        mButton1 = (Button) mView.findViewById(R.id.friend1);
+        mButton2 = (Button) mView.findViewById(R.id.friend2);
+        mButton1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (RongIM.getInstance() != null) {
                     RongIM.getInstance().startPrivateChat(getContext(), "10086", "私人聊天");
+                }
+            }
+        });
+        mButton2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (RongIM.getInstance() != null) {
+                    RongIM.getInstance().startPrivateChat(getContext(), "10010", "私人聊天");
                 }
             }
         });

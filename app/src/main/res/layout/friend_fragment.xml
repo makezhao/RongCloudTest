@@ -5,8 +5,14 @@
               android:layout_height="match_parent">
 
     <Button
-        android:id="@+id/friend"
+        android:id="@+id/friend1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="好友xxx"/>
+        android:text="好友make"/>
+
+    <Button
+        android:id="@+id/friend2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="好友fun"/>
 </LinearLayout>
